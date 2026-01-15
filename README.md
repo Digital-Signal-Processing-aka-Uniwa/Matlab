@@ -44,8 +44,8 @@
 
 # Project Overview
 
-This project, completed using **MATLAB 2023**, focuses on fundamental concepts of **Digital Communications**. The primary objective is the generation of sinusoidal signals in the **time domain** and their analysis in the **frequency domain** using the **Fast Fourier Transform (FFT)**. Through structured exercises, the project bridges theoretical signal-processing concepts with practical MATLAB implementations.
-
+The report consists of **30 laboratory exercises** (as listed in the table of contents) centered on generating, transforming, and plotting discrete-time signals.  
+All exercises are implemented in **MATLAB**, with signal definitions influenced by the student’s registration number (AM), which determines specific constants and time intervals.
 
 ---
 
@@ -55,161 +55,115 @@ This project, completed using **MATLAB 2023**, focuses on fundamental concepts o
 | Section | Folder / File | Description |
 |------:|---------------|-------------|
 | 1 | `assign/` | Assignment material |
-| 1.1 | `assign/DC_ExerLab23.pdf` | Digital Communications laboratory exercises (English) |
-| 1.2 | `assign/ΨΕ_ΑσκΕργ23.pdf` | Ψηφιακές Επικοινωνίες – εργαστηριακές ασκήσεις (Greek) |
+| 1.1 | `assign/ExersLabForDelivery22-23.pdf` | Laboratory exercises for submission (English) |
+| 1.2 | `assign/ΑσκησειςΕργΓιαΠαράδοση22-23.pdf` | Εργαστηριακές ασκήσεις προς παράδοση (Greek) |
 | 2 | `docs/` | Theoretical documentation |
-| 2.1 | `docs/Digital-Comms-at-Matlab.pdf` | Digital Communications using MATLAB (English) |
-| 2.2 | `docs/Ψηφιακές-Επικοινωνίες-στο-Matlab.pdf` | Ψηφιακές Επικοινωνίες με χρήση MATLAB (Greek) |
-| 3 | `src/` | MATLAB source code |
-| 3.1 | `src/ask1.m` | Exercise 1 MATLAB implementation |
-| 3.2 | `src/ask2.m` | Exercise 2 MATLAB implementation |
-| 3.3 | `src/ask3.m` | Exercise 3 MATLAB implementation |
-| 3.4 | `src/ask4.m` | Exercise 4 MATLAB implementation |
-| 3.5 | `src/ask5.m` | Exercise 5 MATLAB implementation |
-| 3.6 | `src/ask6.m` | Exercise 6 MATLAB implementation |
-| 3.7 | `src/ask7.m` | Exercise 7 MATLAB implementation |
-| 3.8 | `src/ask8.m` | Exercise 8 MATLAB implementation |
-| 3.9 | `src/ask9.m` | Exercise 9 MATLAB implementation |
-| 3.10 | `src/ask10.m` | Exercise 10 MATLAB implementation |
-| 3.11 | `src/ask11.m` | Exercise 11 MATLAB implementation |
-| 3.12 | `src/ask12.m` | Exercise 12 MATLAB implementation |
-| 3.13 | `src/ask13.m` | Exercise 13 MATLAB implementation |
-| 3.14 | `src/ask14.m` | Exercise 14 MATLAB implementation |
-| 3.15 | `src/ask15.m` | Exercise 15 MATLAB implementation |
-| 3.16 | `src/ask16.m` | Exercise 16 MATLAB implementation |
-| 3.17 | `src/ask17.m` | Exercise 17 MATLAB implementation |
-| 3.18 | `src/ask18.m` | Exercise 18 MATLAB implementation |
-| 3.19 | `src/ask19.m` | Exercise 19 MATLAB implementation |
-| 3.20 | `src/ask20.m` | Exercise 20 MATLAB implementation |
-| 3.21 | `src/ask21.m` | Exercise 21 MATLAB implementation |
-| 3.22 | `src/ask24.m` | Exercise 24 MATLAB implementation |
-| 3.23 | `src/ask27.m` | Exercise 27 MATLAB implementation |
-| 3.24 | `src/bpfilt.m` | Band-pass filter implementation |
-| 3.25 | `src/butterworth_filter.m` | Butterworth filter design |
-| 3.26 | `src/mine_sin.m` | Custom sine signal generation |
-| 3.27 | `src/phase_sin.m` | Phase-shifted sine signal generation |
-| 3.28 | `src/myentropy.m` | Entropy calculation function |
-| 3.29 | `src/3WORDS.WAV` | Audio sample used in signal processing exercises |
-| 4 | `graphs/` | Output graphs and figures |
-| 4.1 | `graphs/*.png` | Plots generated from MATLAB exercises |
+| 2.1 | `docs/Digital-Signal-Processing-at-Matlab.pdf` | Digital Signal Processing using MATLAB (English) |
+| 2.2 | `docs/Ψηφιακή-Επεξεργασία-Σήματος-στο-Matlab.pdf` | Ψηφιακή Επεξεργασία Σήματος με MATLAB (Greek) |
+| 3 | `graphs/` | Output graphs and figures |
+| 3.1 | `graphs/ex*.png` | Plots generated from MATLAB exercises |
+| 4 | `src/` | MATLAB source code |
+| 4.1 | `src/ex1.m` | Exercise 1 implementation |
+| 4.2 | `src/ex2a.m`, `src/ex2b.m` | Exercise 2 implementations |
+| 4.3 | `src/ex3*.m` | Exercise 3 implementations (standard & repmat versions) |
+| 4.4 | `src/ex4.m` | Exercise 4 implementation |
+| 4.5 | `src/ex5a.m`, `src/ex5b.m` | Exercise 5 implementations |
+| 4.6 | `src/ex6.m` – `src/ex9b.m` | Exercises 6–9 implementations |
+| 4.7 | `src/ex10.m` – `src/ex19.m` | Exercises 10–19 implementations |
+| 4.8 | `src/ex22.m`, `src/ex25.m`, `src/ex26.m`, `src/ex29.m` | Advanced exercise implementations |
+| 4.9 | `src/dft.m` | Discrete Fourier Transform implementation |
+| 4.10 | `src/convall.m` | Convolution utility function |
+| 4.11 | `src/stepseq.m` | Step sequence generation |
+| 4.12 | `src/my_toeplitz.m` | Custom Toeplitz matrix function |
+| 4.13 | `src/freq.m` | Frequency analysis utility |
+| 4.14 | `src/transfer.m` | Transfer function implementation |
+| 4.15 | `src/theory.m` | Theoretical signal analysis script |
 | 5 | `README.md` | Repository overview and usage instructions |
 
 ---
 
-## Core Exercises
+## Exercise 1: Multi-Part Discrete Signal
 
-### Exercise 1: Sine Wave Generation
+The first exercise involves plotting a discrete-time signal \( x[n] \) defined over three distinct intervals:
 
-The objective of this exercise is to implement a custom MATLAB function named `mine_sin` for generating a sinusoidal signal based on user-defined parameters.
-
-**Inputs**
-- Frequency 
-
-$$ 
-f_0 
+$$
+-2 \le n \le 4   
 $$
 
-- Sampling frequency 
+Constant value equal to the **single-digit sum** of the student’s ID  
+  (calculated as **9**)
 
-$$ 
-f_s 
+$$
+4 < n \le 10   
 $$
 
-- Amplitude 
+Constant value of **0**
 
-$$ 
-A 
+$$
+10 < n \le 20   
 $$
 
-- Phase 
+Signal defined by:
 
-$$ 
-\varphi 
+$$
+x[n] = \sqrt{2n}
 $$
 
-- Signal duration 
+### MATLAB Implementation Highlights
+- Uses `stem(n, x)` for discrete-time plotting  
+- Employs `ones()` and `zeros()` to construct constant signal segments  
+- Computes the single-digit sum of the student ID using a custom loop with modulo operations
 
-$$ 
-T_1 
+---
+
+## Exercise 2: Signal Transformations
+
+The second exercise examines **unit step** and **unit impulse** signals.
+
+### Signal Definition
+
+$$
+y[n] = u(n - 3) - 6\delta(n - 1)
 $$
 
-**Key Logic**
-- The sampling period is calculated as:
-
-  $$
-  T_s = \frac{1}{f_s}
-  $$
-
-- A time axis is created from 
+- **Time Interval:**  
 
 $$ 
-0 
-$$ 
+n = -51  
+$$
 
 to 
 
-$$ 
-T_1 - T_s 
-$$
-
-**Signal Equation**
+$$ n = 51 
 
 $$
-x(t) = A \cdot \sin(2\pi f_0 t + \varphi)
-$$
+determined by the student’s ID
 
-**Visualization**
-- Time-domain plot displaying signal amplitude versus time
+### Key Implementation Details
+- Uses a custom MATLAB function `stepseq` to generate the unit step sequence  
+- Combines step and impulse signals to form composite discrete-time signals
 
 ---
 
-### Exercise 2: Amplitude Spectrum Analysis
+## Contents Summary
 
-This exercise introduces a second function, `phase_sin`, used to compute and visualize the **amplitude spectrum** of the sinusoidal signal generated in Exercise 1.
+The complete laboratory report includes the following (partial overview):
 
-**FFT Implementation**
-- Uses MATLAB’s `fft()` function to transform the signal from the time domain to the frequency domain
-
-**Signal Processing Techniques**
-- `fftshift()` is applied to center the spectrum around 0 Hz
-- Amplitude normalization is performed by dividing by the signal length 
-
-$$ 
-N 
-$$
-
-**Bandwidth Calculation**
-- The bandwidth is determined using the sampling interval
-- The time resolution 
-
-$$ 
-dt 
-$$ 
-
-is defined as:
-  
-$$
-dt = \frac{1}{100 \cdot f_0}
-$$
-
-**Visualization**
-- Frequency-domain plot displaying **Frequency (Hz)** versus **Amplitude (Volts)**
+- **Exercise 1:** Multi-part discrete signal plotting (Pages 4–7)  
+- **Exercise 2:** Unit step and impulse combinations (Pages 7–16)  
+- **Exercises 3–30:** Various DSP signal implementations and analyses (Pages 16–120)
 
 ---
 
-## Project Contents
+## Technical Setup
 
-The complete laboratory report consists of **30 exercises across 131 pages**, covering a broad range of topics in **Digital Communications** and **Digital Signal Processing**.
-
-| Exercise Range | Pages     | Focus                               |
-|----------------|-----------|-------------------------------------|
-| Exercise 1     | 4 – 7     | Time-domain sine wave generation    |
-| Exercise 2     | 7 – 11    | Amplitude spectrum (FFT analysis)   |
-| Exercises 3–30 | 11 – 131  | Advanced digital communications     |
+- **Software:** MATLAB  
+- **Primary Commands Used:**  
+  `stem`, `zeros`, `ones`, `sqrt`, `xlabel`, `ylabel`, `title`
 
 ---
 
-This project provides a strong foundation in **signal generation, spectral analysis, and MATLAB-based digital communication techniques**, combining theoretical rigor with practical experimentation.
+This laboratory work demonstrates practical proficiency in **discrete-time signal modeling**, **MATLAB-based visualization**, and fundamental **DSP concepts** through structured and progressively complex exercises.
 
 ---
 
@@ -271,7 +225,7 @@ Basic understanding of:
 
 Using Git:
 ```bash
-git clone https://github.com/Digital-Communications-aka-Uniwa/Matlab.git
+git clone https://github.com/Digital-Signal-Processing-aka-Uniwa/Matlab.git
 ```
 
 #### Alternative (Without Git)
@@ -318,48 +272,24 @@ src/
 ### 1. Execute an Exercise Script
 From the MATLAB Command Window:
 ```bash
-run('src/ask1.m')
+run('src/ex1.m')
 ```
 Or:
 - Open the script in the MATLAB Editor
 - Press Run
 
-Each `askX.m` file corresponds to a specific laboratory exercise.
+Each `exX.m` file corresponds to a specific laboratory exercise.
 
-### 2. Custom Signal Generation
+### 2. Supporting Functions
+Some exercises depend on custom utility functions located in src/, such as:
+- `stepseq.m` – unit step sequence
+- `dft.m` – Discrete Fourier Transform
+- `convall.m` – convolution helper
+- `my_toeplitz.m` – custom Toeplitz matrix
+- `freq.m` – frequency analysis
+- `transfer.m` – transfer function modeling
 
-Example: Generate a sinusoidal signal using the custom function:
-```bash
-x = mine_sin(f0, fs, A, phi, T1);
-```
-Where:
-- `f0` : signal frequency
-- `fs` : sampling frequency
-- `A` : amplitude
-- `phi` : phase
-- `T1` : duration
-
-### 3. Frequency-Domain Analysis
-FFT-based analysis is performed using:
-- `fft()`
-- `fftshift()`
-- Normalization by signal length
-
-Results are visualized as:
-- Time-domain plots
-- Frequency-domain (amplitude spectrum) plots
-
-### 4. Audio Signal Processing
-The file:
-```bash
-src/3WORDS.WAV
-```
-is used in selected exercises involving:
-- Signal filtering
-- Spectrum analysis
-- Entropy calculation
-
-Ensure your system audio is enabled.
+Ensure the entire `src/` folder is on the MATLAB path.
 
 ---
 
@@ -376,5 +306,5 @@ in `.png` format
 ## Open the Documentation
 1. Navigate to the `docs/` directory
 2. Open the report corresponding to your preferred language:
-    - English: `Digital-Comms-at-Matlab.pdf`
-    - Greek: `Ψηφιακές-Επικοινωνίες-στο-Matlab.pdf`
+    - English: `Digital-Signal-Processing-at-Matlab.pdf`
+    - Greek: `Ψηφιακή-Επεξεργασία-Σήματος-στο-Matlab.pdf`
