@@ -170,8 +170,8 @@ This laboratory work demonstrates practical proficiency in **discrete-time signa
 
 # Installation & Setup Guide
 
-This repository contains a **Digital Communications** laboratory project implemented in **MATLAB**, focusing on **time-domain signal generation** and **frequency-domain analysis (FFT)**.  
-It is designed for **academic use** within Digital Communications and Signal Processing courses.
+This repository contains a **Digital Signal Processing (DSP)** laboratory project implemented in **MATLAB**, consisting of **30 structured exercises** focused on **discrete-time signal generation, transformation, and visualization**.  
+The project is intended for academic use in **Digital Signal Processing** courses.
 
 ---
 
