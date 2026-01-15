@@ -134,8 +134,8 @@ $$
 
 to 
 
-$$ n = 51 
-
+$$ 
+n = 51 
 $$
 
 determined by the student’s ID
