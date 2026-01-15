@@ -29,16 +29,15 @@
 </p>
 
 <p align="center">
-  Supervisor: Emmanouel T. Michailidis, Senior Researcher<br>
+  Supervisor: Emmanouel Bratsolis, Special Technical Laboratory Staff<br>
 </p>
 
 <p align="center">
-  <a href="https://scholar.google.com/citations?user=IMZqPhYAAAAJ&hl=en" target="_blank">UNIWA Profile</a> ·
-  <a href="https://www.linkedin.com/in/etmichailidis/" target="_blank">LinkedIn</a>
+  <a href="https://scholar.google.com/citations?user=a-n_6O0AAAAJ&hl=en" target="_blank">UNIWA Profile</a>
 </p>
 
 <p align="center">
-  Athens, June 2023
+  Athens, January 2023
 </p>
 
 ---
