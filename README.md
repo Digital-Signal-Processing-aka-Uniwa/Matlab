@@ -29,7 +29,16 @@
 </p>
 
 <p align="center">
-  Supervisor: Emmanouel Bratsolis, Special Technical Laboratory Staff<br>
+  Supervisor: Nikolaos Miridakis, Associate Professor<br>
+</p>
+
+<p align="center">
+  <a href="https://ice.uniwa.gr/en/emd_person/nikolaos-miridakis/" target="_blank">UNIWA Profile</a> ·
+  <a href="https://www.linkedin.com/in/nikos-miridakis-8911a57b/" target="_blank">LinkedIn</a>
+</p>
+
+<p align="center">
+  Co-supervisor: Emmanouel Bratsolis, Special Technical Laboratory Staff<br>
 </p>
 
 <p align="center">
